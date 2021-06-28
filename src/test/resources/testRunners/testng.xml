@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing" verbose="4" thread-count="3" parallel="tests">
+
+	<test name="Application AmazonTest">
+	<parameter name="URL" value="https://www.amazon.in"></parameter>
+	<parameter name="browserName" value="chrome"></parameter>
+		<classes>
+			<class name="testNG.AmazonTest" />
+		</classes>
+	</test> 
+	
+	<test name="Application HRMTest">
+	<parameter name="URL" value="https://www.orangehrm.com/orangehrm-30-day-trial/"></parameter>
+	<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+			<class name="testNG.HRMTest" />
+		</classes>
+	</test> 
+	
+	<test name="Application DataProvide">
+	<parameter name="URL" value="https://demo.opencart.com/index.php?route=account/login"></parameter>
+	<parameter name="browserName" value="chrome"></parameter>
+		<classes>
+			<class name="testNG.Dataprovider" />
+		</classes>
+	</test> 
+	
+</suite> 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing" verbose="4" thread-count="1" parallel="tests">
+
+	<test name="Application DemoCart">
+	<parameter name="url" value="https://demo.opencart.com/index.php?route=account/register"></parameter>
+	<parameter name="browserName" value="chrome"></parameter>
+		<classes>
+			<class name="testNGPractise.DemoCart_DataProvider" />
+		</classes>
+	</test> 
+	
+</suite> 
